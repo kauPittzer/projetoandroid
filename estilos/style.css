@@ -1,0 +1,211 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family: idroid;
+    src: url(../midia/fontes/idroid.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+/*
+
+#c5ebd6    - verde claro
+#83e1ad
+#3ddc84
+#2fa866
+#1a5c37    - verde escuro
+#063d1e    - verde muito escuro
+
+*/
+:root{
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+}
+/*
+
+*{
+    margin: 0px;               IMPORTANTE PARA CARALHO
+    padding: 0px;
+}
+
+*/
+body{
+    background-color: var(--cor0);
+    font-family: Arial, Helvetica, sans-serif;
+}
+p{
+    text-align: justify;
+}
+.background{
+    background-color: white;
+    width: 950px;
+    padding: 20px;
+    margin: auto;
+    margin-top: -27.8px;
+    box-shadow: .3px .3px 4px black;
+    border-radius: 0px 0px 5px 5px;
+    min-width: 320px;
+}
+.color-p{
+    color: #1A5C38;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px var(--cor4);
+}
+.link-to-a{
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--cor5);
+}
+.link-to-a::after{
+    content: '🔗';
+}
+.link-to-a:hover{
+    background-color: var(--cor5);
+    color: white;
+}
+header{
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    padding: 20px 20px 0px 20px;
+    margin: -20px -8px 30px -20px;
+    box-shadow: 1px 1px 3px black;
+    min-width: 320px;
+}
+header h1{
+    font-size: 3em;
+    color: white;
+    text-align: center;
+    margin-top: 3px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-shadow: 3px 1px 10px black;
+    background-color: transparent;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+header p{
+    font-size: 1.2em;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 4px black;
+}
+header nav{
+    box-shadow: 1px 1px 8px black;
+    background-color: var(--cor5);
+    margin: 0px -20px 0px -10px;
+    padding: 5px 0px 10px 0px;
+}
+header a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+header a:hover{
+    font-weight: bold;
+    background-color: var(--cor3);
+    padding: 10px;
+    color: var(--cor5);
+    border-radius: 4px;
+    transition-duration: .5s;
+}
+main{
+    margin: auto;
+    min-width: 250px;
+    max-width: 1000px;
+}
+main p{
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+}
+main img{
+    margin: auto;
+    display: block;
+    width: 100%;
+}
+main img.bugdroid{
+    margin: auto;
+    display: block;
+    max-width: 350px;
+}
+main h1{
+    text-align: center;
+    color: var(--cor4);
+    font-size: 2em;
+    font-family: 'Idroid', sans-serif;
+    text-shadow: 1px 1px 3px var(--cor4);
+}
+h2{
+    background-image: linear-gradient(to right, var(--cor3), transparent);
+    padding: 2px 2px 2px 10px;
+    border-radius: 8px 0px 0px 8px;
+    color: var(--cor4);
+    font-family: 'Idroid', sans-serif;
+    text-shadow: 1px 0px 2px black;
+}
+section div{
+    padding: 20px;
+    background-color: var(--cor5);
+    padding-bottom: 54.2%;
+    position: relative;
+}
+div.videoandroid iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+section aside h3{
+    color: white;
+    background-color: var(--cor3);
+    margin: 20px -20px 1px -20px;
+    padding: 10px;
+    border-radius: 5px 5px 0px 0px;
+}
+section aside{
+    background-color: var(--cor0);
+    padding: 0px 20px 20px 20px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px black;
+}
+aside p{
+    padding-bottom: 10px;
+}
+aside ul{
+    list-style-type: '\1F5F8\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+footer{
+    background-color: #1A5C38;
+    padding: 3px;
+    margin: 1px 1px 1px 1px;
+    text-align: center;
+    color: white;
+    margin: 15px -8px -8px -8px;
+}
+footer p{
+    margin: 0px;
+    text-align: center;
+    font-size: .8em;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+footer a:hover{
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.911);
+}
+@media screen and (max-width: 600px){
+    header a{
+        margin-right: 20px;
+    }
+}
