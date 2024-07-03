@@ -29,6 +29,7 @@
 *{
     margin: 0px;               IMPORTANTE PARA CARALHO
     padding: 0px;
+    box-sizing: border-box;
 }
 
 */
